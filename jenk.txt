@@ -1,0 +1,42 @@
+10)click on manage jenkins-->tools-->check path-->command prompt-->type where git-->apply-->save
+click on new item-->second jobb-->freestyle-->ok
+Description-->select git under source code management-->paste repository url that includes python code(ex:number-game)-->click on add-->select jenkins-->enter your username and password-->click on add-->select credentials  username/*****from box-->branch specifier::*/main
+
+on additional behaviors-->check out to subdirectory-->create a new folder on c-drive-->click on the folder and select path copy and paste it at
+local subdirectory-->apply-->save
+click on build now-->click on tick mark-->console output(not now i guess)
+click on configure-->add build step-->execute windows batch path-->inside the column type
+python C:\newww\app.py  (path of folder in c drive)\python file name from number-game repo github-->apply-->save
+again click on build now-->click on tick mark-->console output
+
+
+
+
+
+9)
+First all process should have be done including java and environment variables setup
+then click on jenkins.war file on downloads click on cmd
+Type cmd
+On cmd type Java -jar jenkins.war -y
+There you will get password 
+Type http://localhost:8080/ 
+Then type administrator password that you get on cmd
+select first one install suggested plugins
+select username password and all
+enter same earlier localhost url for Jenkins url
+if all these setup done earlier 
+directly sign in using username and password
+
+click on new item 
+enter item :first job
+select freestyle->ok
+
+description
+add build step:Windows execute batch command(first one)
+type echo "first job"
+apply save
+
+click on build now
+click on tick mark obtained downwards
+then click on console output 
+there should be your output "first job"
